@@ -11,8 +11,8 @@ export const ManinForm = () => {
   return (
     <Form form={form} layout="vertical" onFinish={onFinish}>
       <Form.Item
-        label="Total Amount"
-        name="amount"
+        label="Total Tip Amount"
+        name="AllTip"
         rules={[{ required: true }]}
       >
         <InputNumber
@@ -22,7 +22,7 @@ export const ManinForm = () => {
         />
       </Form.Item>
 
-      <Form.List name="items">
+      <Form.List name="workers">
         {(fields, { add, remove }) => (
           <>
             {fields.map(({ key, name }) => (
@@ -41,7 +41,7 @@ export const ManinForm = () => {
                 </Form.Item>
 
                 <Form.Item
-                  name={[name, 'value']}
+                  name={[name, 'workHours']}
                   rules={[{ required: true, message: 'Enter value' }]}
                 >
                   <InputNumber
