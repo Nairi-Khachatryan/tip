@@ -1,3 +1,10 @@
+import React from 'react';
+import { ManinForm } from './components/mainForm/MainForm';
+
 export const App = () => {
-  return <div>Hello</div>;
+  return (
+    <div>
+      <ManinForm />
+    </div>
+  );
 };

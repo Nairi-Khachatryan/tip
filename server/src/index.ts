@@ -11,10 +11,6 @@ app.get('/', (_, res) => {
   res.send('Server works');
 });
 
-app.listen(5000, () => {
-  console.log('Server running on 5000');
-});
-
 app.listen(PORT, () => {
   console.log(`Server listening at Port ${PORT}`);
   // connectDb();
